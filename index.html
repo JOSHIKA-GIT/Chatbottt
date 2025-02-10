@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="chat-container">
+        <div id="chat">
+            <div class="bot-message">Welcome to the museum ticket booking system!</div>
+        </div>
+
+        <!-- Input box and send button at the bottom -->
+        <div class="input-container">
+            <input type="text" id="userMessage" placeholder="Type your message..." onkeydown="if(event.key === 'Enter'){ processMessage(); }">
+            <button onclick="processMessage()">Send</button>
+        </div>
+    </div>
+
+    <form id="bookingForm" method="POST" action="send_email.php">
+        <input type="hidden" id="name" name="name">
+        <input type="hidden" id="email" name="email">
+        <input type="hidden" id="adults" name="adults">
+        <input type="hidden" id="kids" name="kids">
+        <input type="hidden" id="specialRequirements" name="specialRequirements">
+        <input type="hidden" id="totalCost" name="totalCost">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

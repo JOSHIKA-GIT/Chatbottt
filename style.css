@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('https://bb.branding-element.com/prod/126343/126343-output.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#chat-container {
+    width: 40%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.9);  /* White with slight transparency */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    overflow: hidden;
+}
+
+#chat {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.bot-message {
+    background: maroon;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 10px;
+    max-width: 70%;
+    align-self: flex-start;
+}
+
+.user-message {
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 10px;
+    max-width: 70%;
+    align-self: flex-end;
+    border: 1px solid maroon;
+}
+
+.input-container {
+    display: flex;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    background: white;
+}
+
+input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background: maroon;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
