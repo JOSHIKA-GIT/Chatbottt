@@ -8,6 +8,10 @@
 </head>
 <body>
     <div id="chat-container">
+        <!-- Chat Header with Bot Name -->
+        <div id="chat-header">Museum Bot</div>
+
+        <!-- Chat messages area -->
         <div id="chat">
             <div class="bot-message">Welcome to the museum ticket booking system!</div>
         </div>
@@ -19,18 +23,10 @@
         </div>
     </div>
 
-    <form id="bookingForm" method="POST" action="send_email.php">
-        <input type="hidden" id="name" name="name">
-        <input type="hidden" id="email" name="email">
-        <input type="hidden" id="adults" name="adults">
-        <input type="hidden" id="kids" name="kids">
-        <input type="hidden" id="specialRequirements" name="specialRequirements">
-        <input type="hidden" id="totalCost" name="totalCost">
-    </form>
-
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
